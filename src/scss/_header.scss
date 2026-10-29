@@ -1,0 +1,87 @@
+@use "variables" as v;
+
+.header {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  border-bottom: 1px solid rgb(238 228 218 / 75%);
+  background: rgb(252 248 243 / 95%);
+  backdrop-filter: blur(12px);
+
+  &__inner {
+    display: flex;
+    min-height: 82px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  &__button {
+    flex-shrink: 0;
+  }
+}
+
+.logo {
+  font-family: v.$font-heading;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  line-height: 1;
+
+  span {
+    color: v.$color-primary;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  &__link {
+    color: v.$color-muted;
+    font-size: 14px;
+    transition: color v.$transition-base;
+
+    &:hover,
+    &--active {
+      color: v.$color-primary;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .header {
+    &__inner {
+      min-height: 72px;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-block: 14px;
+    }
+
+    &__button {
+      display: none;
+    }
+  }
+
+  .nav {
+    order: 1;
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+
+    &__link {
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .nav {
+    gap: 8px;
+
+    &__link {
+      font-size: 11px;
+    }
+  }
+}

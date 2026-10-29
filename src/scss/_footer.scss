@@ -1,0 +1,83 @@
+@use "variables" as v;
+
+.visit {
+  padding-block: 64px;
+  background: v.$color-primary;
+  color: #fff;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .eyebrow {
+    color: v.$color-accent;
+  }
+
+  .section-title {
+    max-width: 650px;
+    font-size: clamp(30px, 4vw, 42px);
+  }
+
+  p:not(.eyebrow) {
+    margin: 16px 0 0;
+    color: rgb(255 255 255 / 80%);
+    font-size: 14px;
+  }
+
+  .button {
+    flex-shrink: 0;
+  }
+}
+
+.footer {
+  padding-block: 28px;
+  background: #30241e;
+  color: #fff;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  p {
+    margin: 0;
+    color: rgb(255 255 255 / 65%);
+    font-size: 12px;
+  }
+
+  &__copyright {
+    text-align: right;
+  }
+}
+
+.logo--footer {
+  color: #fff;
+  font-size: 29px;
+}
+
+@media (max-width: 680px) {
+  .visit {
+    &__inner {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 28px;
+    }
+  }
+
+  .footer {
+    &__inner {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &__copyright {
+      text-align: left;
+    }
+  }
+}

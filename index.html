@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aroma — затишна кав'ярня з ароматною кавою, свіжою випічкою та приємною атмосферою."
+    />
+    <title>Aroma — кав'ярня, що має душу</title>
+    <link rel="icon" type="image/svg+xml" href="src/images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <a class="logo" href="#" aria-label="Aroma — на головну">
+          aroma<span>.</span>
+        </a>
+
+        <nav class="nav" aria-label="Основна навігація">
+          <a class="nav__link nav__link--active" href="#home">Головна</a>
+          <a class="nav__link" href="#menu">Меню</a>
+          <a class="nav__link" href="#about">Про нас</a>
+          <a class="nav__link" href="#contacts">Контакти</a>
+        </nav>
+
+        <a class="button button--small header__button" href="#menu">
+          Наше меню
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <p class="eyebrow">ТВОЄ МІСЦЕ ДЛЯ ПАУЗИ</p>
+
+            <h1 class="hero__title">
+              Кава, яка
+              <span>робить день</span>
+              кращим
+            </h1>
+
+            <p class="hero__text">
+              Почни ранок з улюбленого смаку. Свіжозварена кава, домашня випічка
+              та атмосфера, до якої хочеться повертатися.
+            </p>
+
+            <div class="hero__actions">
+              <a class="button" href="#menu">Обрати каву <span>→</span></a>
+              <a class="text-link" href="#about">Наша історія</a>
+            </div>
+
+            <div class="hero__note">
+              <span class="hero__note-icon" aria-hidden="true">✳</span>
+              <p>Свіжі зерна. Справжній смак. Щодня.</p>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <img
+              class="hero__image"
+              src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1100&q=85"
+              alt="Свіжозварена кава в затишній кав'ярні"
+            />
+            <div class="hero__badge">
+              <span>100%</span>
+              <small>любові<br />до кави</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu section" id="menu">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">НАШІ ФАВОРИТИ</p>
+              <h2 class="section-title">Кава з характером</h2>
+            </div>
+            <p class="section-heading__text">
+              Від класики до нових відкриттів — знайди свій улюблений смак.
+            </p>
+          </div>
+
+          <div class="menu__grid">
+            <article class="product-card">
+              <div class="product-card__image-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=85"
+                  alt="Капучино з молочною пінкою"
+                  class="product-card__image"
+                  loading="lazy"
+                />
+                <span class="product-card__tag">Хіт</span>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__heading">
+                  <h3>Капучино</h3>
+                  <span class="product-card__price">95 ₴</span>
+                </div>
+                <p>Еспресо, ніжне молоко та оксамитова пінка.</p>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-card__image-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=700&q=85"
+                  alt="Чорна кава еспресо"
+                  class="product-card__image"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__heading">
+                  <h3>Еспресо</h3>
+                  <span class="product-card__price">65 ₴</span>
+                </div>
+                <p>Насичений смак і виразний аромат кавових зерен.</p>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-card__image-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=85"
+                  alt="Лате в керамічній чашці"
+                  class="product-card__image"
+                  loading="lazy"
+                />
+                <span class="product-card__tag">Ніжний смак</span>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__heading">
+                  <h3>Лате</h3>
+                  <span class="product-card__price">105 ₴</span>
+                </div>
+                <p>М'який еспресо з великою кількістю молока.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="menu__action">
+            <a class="button button--outline" href="#contacts">
+              Завітати до кав'ярні <span>→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="container about__inner">
+          <div class="about__visual">
+            <img
+              src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=85"
+              alt="Тепла атмосфера та інтер'єр кав'ярні"
+              class="about__image"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="about__content">
+            <p class="eyebrow">ТРОХИ ПРО НАС</p>
+            <h2 class="section-title">
+              Більше, ніж просто
+              <span>чашка кави</span>
+            </h2>
+            <p class="about__text">
+              Aroma — це місце, де можна сповільнитися, зустрітися з друзями або
+              просто побути наодинці із собою.
+            </p>
+            <p class="about__text">
+              Ми обираємо якісні кавові зерна, дбаємо про кожну чашку та віримо,
+              що хороші речі починаються з маленьких задоволень.
+            </p>
+
+            <a class="text-link" href="#contacts"
+              >Завітай до нас <span>→</span></a
+            >
+
+            <div class="about__stats">
+              <div>
+                <strong>5+</strong>
+                <span>років разом із вами</span>
+              </div>
+              <div>
+                <strong>20k+</strong>
+                <span>чашок щастя</span>
+              </div>
+              <div>
+                <strong>100%</strong>
+                <span>любові до своєї справи</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="visit" id="contacts">
+        <div class="container visit__inner">
+          <div>
+            <p class="eyebrow">МИ ЧЕКАЄМО НА ТЕБЕ</p>
+            <h2 class="section-title">Твоя улюблена чашка вже поруч</h2>
+            <p>Завітай на каву, свіжу випічку та гарний настрій.</p>
+          </div>
+          <a class="button button--light" href="mailto:hello@aroma.example">
+            Зв'язатися з нами <span>→</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <a class="logo logo--footer" href="#home">aroma<span>.</span></a>
+        <p>Маленькі радощі щодня.</p>
+        <p class="footer__copyright">© 2026 Aroma Coffee</p>
+      </div>
+    </footer>
+  </body>
+</html>
